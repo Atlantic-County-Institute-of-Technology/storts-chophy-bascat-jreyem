@@ -21,8 +21,8 @@ def extract_words():
                     WORD_LIST.append(word.strip())
     except FileNotFoundError:
         print("[!] Error! File Not Found")
-    print(WORD_LEN)
-    print(WORD_LIST)
+    # print(WORD_LEN)
+    # print(WORD_LIST)
     # target = WORD_LIST[random.randint(0,len(WORD_LIST))]
     return random.choice(WORD_LIST)
 
@@ -91,7 +91,7 @@ def minecraft():
         print("[-] 0. Exit\n"
               "[-] 1. Change Word Length\n"
               "[-] 2. Change Difficulty\n"
-              "[-] 3. Play Game\n" \
+              "[-] 3. Play Game\n"
               "[-] 4. View Current Settings")
         selection = int(input("[-] Please Select an Option: "))
 
